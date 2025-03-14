@@ -49,6 +49,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
+        MenuPerfiles = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -155,6 +156,14 @@ public class MdiGeneral extends javax.swing.JFrame {
             }
         });
         jMenu3.add(jMenuItem7);
+
+        MenuPerfiles.setText("Mantenimiento Perfiles");
+        MenuPerfiles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuPerfilesActionPerformed(evt);
+            }
+        });
+        jMenu3.add(MenuPerfiles);
 
         jMenu1.add(jMenu3);
 
@@ -272,6 +281,16 @@ public class MdiGeneral extends javax.swing.JFrame {
         ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
+    private void MenuPerfilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPerfilesActionPerformed
+        // TODO add your handling code here:
+        MantenimientoPerfiles ventana = new MantenimientoPerfiles();
+        jDesktopPane1.add(ventana);
+        Dimension desktopSize = jDesktopPane1.getSize();
+        Dimension FrameSize = ventana.getSize();
+        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
+    //implementando mantenimiento para traer ventana
+    }//GEN-LAST:event_MenuPerfilesActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,6 +330,7 @@ public class MdiGeneral extends javax.swing.JFrame {
     private javax.swing.JMenuItem MCarreras;
     private javax.swing.JMenuItem MantenimientoCursos;
     private javax.swing.JMenuItem MenuJornadas;
+    private javax.swing.JMenuItem MenuPerfiles;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
