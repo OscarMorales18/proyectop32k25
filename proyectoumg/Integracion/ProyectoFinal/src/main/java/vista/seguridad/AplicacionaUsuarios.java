@@ -573,6 +573,23 @@ public class AplicacionaUsuarios extends javax.swing.JInternalFrame {
             //inserta a la tabla
             relusuaplDAO.insert(relusuaplAInsertar);
             JOptionPane.showMessageDialog(this, "Asignacion Exitosa", "Anuncio", JOptionPane.INFORMATION_MESSAGE);
+            
+            //Hecho por ALISSON LÓPEZ 7225 : Reinicio del ciclo 
+            ins.setVisible(false); 
+            impr.setVisible(false); 
+            elim.setVisible(false); 
+            edit.setVisible(false);      
+            jLabel8.setVisible(false);     
+            jButton8.setVisible(false);
+            jTextField4.setVisible(false);
+            jLabel7.setVisible(false);
+            
+            jTextField1.setText(" ");
+            jTextField2.setText(" ");
+            jTextField3.setText(" ");
+            jTextField4.setText(" ");
+            
+            lst2App.clearSelection();
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
